@@ -15,5 +15,5 @@ public class JavaApplication4 {
 
 
 /**
- * Yuchen Liang
+	YC Liang 
  */
