@@ -8,6 +8,7 @@ class registerBarOwner extends CI_Controller {
     }
 
     public function index() {
+    	$this->load->view ('snippets/common');
     	$this->load->view ('snippets/top');
     	$this->load->view ('registerBarOwner');
     	$this->load->view ('snippets/footer');

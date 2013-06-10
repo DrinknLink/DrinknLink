@@ -43,6 +43,7 @@
   });
   };
 
+  
   // Load the SDK asynchronously
   (function(d){
    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
@@ -57,12 +58,13 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
-      console.log('Good to see you, ' + response.name + '.');
+      console.log(JSON.stringify(response));
     });
   }
 </script>
 <!--Below we include the Login Button social plugin. This button uses the JavaScript SDK to-->
 <!--present a graphical Login button that triggers the FB.login() function when clicked.-->
-<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+<div class="fb-login-button" show-faces="true" width="200" max-rows="1" size="large"></div>
+<a href="javascript:FB.login();">Login</a> 
 </body>
 </html>

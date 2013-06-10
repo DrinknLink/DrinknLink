@@ -103,6 +103,7 @@ $lang['main_WRITE_NAME_SUGGESTIONS_WILL_APPEAR'] = "Write name, suggestions will
 $lang['main_SEARCH'] = "SEARCH";
 $lang['main_YOUR_CHOICES'] = "Your choices";
 $lang['main_MINIMIZE'] = "minimize";
+$lang['main_MAXIMIZE'] = "maximize";
 $lang['main_FOR'] = "For:";
 $lang['main_BAR_GRADING'] = "Bar Grading";
 $lang['main_BAR_PUB_TYPE'] = "Bar/Pub Type";
@@ -116,22 +117,3 @@ $lang['main_DANCE'] = "Dance";
 $lang['main_LIVE_MUSIC'] = "Live music";
 $lang['main_KARAOKE'] = "Karaoke";
 $lang['main_PUB_QUIZ'] = "Pub quiz";
-
-$lang['main_SEARCH_RESULTS'] = "Search results";
-$lang['main_MATCHING_YOUR_CRITERIA'] = "matching your criteria: ";
-$lang['main_ADD_TO_BAR_LIST'] = "add to bar list";
-$lang['main_ADD_TO_FAVORITES'] = "add to favorites";
-$lang['main_ADD_TO_PUB_CRAWL'] = "add to bar crawl";
-$lang['main_OPEN_TODAY'] = "Open today: ";
-$lang['main_RATED'] = "Rated: ";
-$lang['main_BEERS_ON_DRAFT'] = "Beers on draft: ";
-$lang['main_FIRST_EVENT_TONIGHT'] = "First event tonight: ";
-$lang['main_FIRST_PROMO_TONIGHT'] = "First promo tonight: ";
-$lang['main_VISIT_BAR_PAGE'] = "VISIT BAR PAGE";
-
-$lang['bigNav_BAR_INFO'] = "BAR INFO";
-$lang['bigNav_EVENTS_AND_PROMOTIONS'] = "EVENTS & PROMOTIONS";
-$lang['bigNav_SOCIAL_MEDIA'] = "SOCIAL MEDIA";
-$lang['bigNav_RESERVE_OR_BOOK'] = "RESERVE OR BOOK";
-$lang['bar_FRIENDS_HERE_NOW'] = "Friends who are here now";
-

@@ -26,7 +26,7 @@
                     <a href="/registerfree" id="register-free" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_CREATE_FREE_USER_ACCOUNT'); ?></label></a>							
                 </div>
                 <div>
-                    <a href="/registerbar" id="register-barowner" class="dnl-ui-<"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_REGISTER_AS_BAR_OWNER'); ?></label></a>							
+                    <a href="/registerbar" id="register-barowner" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_REGISTER_AS_BAR_OWNER'); ?></label></a>							
                 </div>
             </div>
         </div>
@@ -45,8 +45,6 @@
                             <li><p><i class="icon-ok"></i> terras</p></li>
                             <li><p><i class="icon-ok"></i> wifi</p></li>
                             <li><p><i class="icon-ok"></i> live sport</p></li>
-                            <li><p><i class="icon-ok"></i> rock music</p></li>
-                            <li><p><i class="icon-ok"></i> casino</p></li>
                         </ul>
                     </div>
                 </div>
@@ -66,7 +64,7 @@
                         <div class="span2" id="searchResults01">
                             <p><?php echo $this->lang->line('main_MATCHING_YOUR_CRITERIA'); ?> 31</p>
                         </div>
-<!--                        <div class="span4" id="searchResults02">
+                        <div class="span4" id="searchResults02">
                             <div class="pagination pagination-centered dnl-color">
                                 <ul>
                                     <li><a href="#"><i class="icon-chevron-left"></i></a></li>
@@ -78,268 +76,119 @@
                                     <li><a href="#"><i class="icon-chevron-right"></i></a></li>
                                 </ul>
                             </div>
-                        </div>-->
+                        </div>
 
                         <div class="span9" id="searchResultsCenter">              
                             <ul class="pager">
-
-                                <ul class="pagination3">
-                                    <li>
-                                        <div class="span3" id="results1">
-                                            <img class="maxImageSize" src="http://chasingthepint.com/img/companies/CompanyB.jpg" alt="" width="205" height="107" />
-                                            <br />
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-                                            <br /><br /><br /><br />
-                                            <p class="resultsName">THE PEGASUS PUB</p>
-                                            <br />
-                                            <p class="resultsInfo">ARNHEM</p>
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-                                            <br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 7/10</p>
-                                            <br /><br />
-                                            <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-                                            <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br />
-                                            <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow searchStyle"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="span3" id="results2">
-                                            <img class="maxImageSize" src="http://www.disco-panel.com/NIGHTCLUB%20AND%20BAR%20LIGHTING%20DESIGN%20AND%20DECOR.jpg" alt="" width="205" height="107" />
-
-                                            <!-- REPETED -->
-                                            <br />
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-                                            <br /><br /><br /><br />
-                                            <p class="resultsName">FLORIAN</p>
-                                            <br />
-                                            <p class="resultsInfo">ARNHEM</p>
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-                                            <br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 8/10</p>
-                                            <br /><br />
-                                            <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-                                            <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">Irish dance contest @22:30</p>
-                                            <br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br />
-                                            <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow searchStyle"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-                                            <!-- END OF REPETED -->
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="span3" id="results3">
-                                            <img class="maxImageSize" src="http://0.tqn.com/d/cruises/1/0/1/V/4/Casino_Bar_121.JPG" alt="" width="205" height="107" />
-                                            <!-- REPETED -->
-                                            <br />
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-                                            <br /><br /><br /><br />
-                                            <p class="resultsName">CAFE MEIJERS</p>
-                                            <br />
-                                            <p class="resultsInfo">ARNHEM</p>
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-                                            <br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 8.5/10</p>
-                                            <br /><br />
-                                            <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-                                            <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br />
-                                            <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow searchStyle"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-                                            <!-- END OF REPETED -->
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="span3" id="results3">
-                                            <img class="maxImageSize" src="http://0.tqn.com/d/cruises/1/0/1/V/4/Casino_Bar_121.JPG" alt="" width="205" height="107" />
-                                            <!-- REPETED -->
-                                            <br />
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-                                            <br /><br /><br /><br />
-                                            <p class="resultsName">CAFE MEIJERS</p>
-                                            <br />
-                                            <p class="resultsInfo">ARNHEM</p>
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-                                            <br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 8.5/10</p>
-                                            <br /><br />
-                                            <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-                                            <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br />
-                                            <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow searchStyle"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-                                            <!-- END OF REPETED -->
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="span3" id="results1">
-                                            <img class="maxImageSize" src="http://chasingthepint.com/img/companies/CompanyB.jpg" alt="" width="205" height="107" />
-                                            <br />
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-                                            <br /><br /><br /><br />
-                                            <p class="resultsName">THE PEGASUS PUB</p>
-                                            <br />
-                                            <p class="resultsInfo">ARNHEM</p>
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-                                            <br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 7/10</p>
-                                            <br /><br />
-                                            <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-                                            <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br />
-                                            <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow searchStyle"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="span3" id="results2">
-                                            <img class="maxImageSize" src="http://www.disco-panel.com/NIGHTCLUB%20AND%20BAR%20LIGHTING%20DESIGN%20AND%20DECOR.jpg" alt="" width="205" height="107" />
-
-                                            <!-- REPETED -->
-                                            <br />
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-                                            <br /><br /><br /><br />
-                                            <p class="resultsName">FLORIAN</p>
-                                            <br />
-                                            <p class="resultsInfo">ARNHEM</p>
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-                                            <br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 8/10</p>
-                                            <br /><br />
-                                            <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-                                            <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">Irish dance contest @22:30</p>
-                                            <br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br />
-                                            <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow searchStyle"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-                                            <!-- END OF REPETED -->
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="span3" id="results2">
-                                            <img class="maxImageSize" src="http://www.disco-panel.com/NIGHTCLUB%20AND%20BAR%20LIGHTING%20DESIGN%20AND%20DECOR.jpg" alt="" width="205" height="107" />
-
-                                            <!-- REPETED -->
-                                            <br />
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-                                            <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-                                            <br /><br /><br /><br />
-                                            <p class="resultsName">FLORIAN</p>
-                                            <br />
-                                            <p class="resultsInfo">ARNHEM</p>
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-                                            <br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 8/10</p>
-                                            <br /><br />
-                                            <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-                                            <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-                                            <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-                                            <br /><br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">Irish dance contest @22:30</p>
-                                            <br /><br />
-                                            <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-                                            <br /><br />
-                                            <p class="resultsInfo firstEvent">n/a</p>
-                                            <br />
-                                            <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow searchStyle"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-                                            <!-- END OF REPETED -->
-                                        </div>
-                                    </li>        
-                                </ul>
-                                
                                 <li class="previous">
-                                    <div id="pager-previous" href="#"></div>
+                                    <a id="pager-previous" href="#"></a>
                                 </li>
-                                
-                                
+                                <div id="myResults" class="span8">
+                                    <div class="span3" id="results1">
+                                        <img class="maxImageSize" src="http://chasingthepint.com/img/companies/CompanyB.jpg" alt="" width="205" height="107" />
+                                        <br />
+                                        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
+                                        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
+                                        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
+                                        <br /><br /><br /><br />
+                                        <p class="resultsName">THE PEGASUS PUB</p>
+                                        <br />
+                                        <p class="resultsInfo">ARNHEM</p>
+                                        <br /><br /><br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
+                                        <br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 7/10</p>
+                                        <br /><br />
+                                        <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
+
+                                        <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
+                                        <img class="maxImageSize2" src="http://www.seeklogo.com/images/M/Murphy_s-logo-DF494E2AAD-seeklogo.com.gif" alt="" width="50" height="38" />
+                                        <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
+                                        <br /><br /><br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
+                                        <br /><br />
+                                        <p class="resultsInfo firstEvent">n/a</p>
+                                        <br /><br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
+                                        <br /><br />
+                                        <p class="resultsInfo firstEvent">n/a</p>
+                                        <br />
+                                        <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow textSizeButton"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
+                                    </div>
+                                    <div class="span3" id="results2">
+                                        <img class="maxImageSize" src="http://www.disco-panel.com/NIGHTCLUB%20AND%20BAR%20LIGHTING%20DESIGN%20AND%20DECOR.jpg" alt="" width="205" height="107" />
+
+                                        <!-- REPETED -->
+                                        <br />
+                                        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
+                                        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
+                                        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
+                                        <br /><br /><br /><br />
+                                        <p class="resultsName">FLORIAN</p>
+                                        <br />
+                                        <p class="resultsInfo">ARNHEM</p>
+                                        <br /><br /><br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
+                                        <br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 8/10</p>
+                                        <br /><br />
+                                        <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
+
+                                        <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
+                                        <img class="maxImageSize2" src="http://www.seeklogo.com/images/M/Murphy_s-logo-DF494E2AAD-seeklogo.com.gif" alt="" width="50" height="38" />
+                                        <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
+                                        <br /><br /><br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
+                                        <br /><br />
+                                        <p class="resultsInfo firstEvent">Irish dance contest @22:30</p>
+                                        <br /><br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
+                                        <br /><br />
+                                        <p class="resultsInfo firstEvent">n/a</p>
+                                        <br />
+                                        <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow textSizeButton"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
+                                        <!-- END OF REPETED -->
+                                    </div>
+                                    <div class="span3" id="results3">
+                                        <img class="maxImageSize" src="http://0.tqn.com/d/cruises/1/0/1/V/4/Casino_Bar_121.JPG" alt="" width="205" height="107" />
+                                        <!-- REPETED -->
+                                        <br />
+                                        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
+                                        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
+                                        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
+                                        <br /><br /><br /><br />
+                                        <p class="resultsName">CAFE MEIJERS</p>
+                                        <br />
+                                        <p class="resultsInfo">ARNHEM</p>
+                                        <br /><br /><br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
+                                        <br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 8.5/10</p>
+                                        <br /><br />
+                                        <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
+
+                                        <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
+                                        <img class="maxImageSize2" src="http://www.seeklogo.com/images/M/Murphy_s-logo-DF494E2AAD-seeklogo.com.gif" alt="" width="50" height="38" />
+                                        <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
+                                        <br /><br /><br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
+                                        <br /><br />
+                                        <p class="resultsInfo firstEvent">n/a</p>
+                                        <br /><br />
+                                        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
+                                        <br /><br />
+                                        <p class="resultsInfo firstEvent">n/a</p>
+                                        <br />
+                                        <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow textSizeButton"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
+                                        <!-- END OF REPETED -->
+                                    </div>
+                                </div>
                                 <li class="next">
-                                    <div id="pager-next" href="#"></div>
+                                    <a id="pager-next" href="#"></a>
                                 </li>
                             </ul>
                         </div>
+
 
 
                     </div>
@@ -353,7 +202,7 @@
     <div class="column column-2">				
         <div class="row">
             <div id="create-fan-page" class="image-button">
-                <a href="<?php echo base_url(); ?>home/loggedinsearchandadvanced"><?php echo str_replace(' ', '<br/>', $this->lang->line('main_CREATE_FAN_PAGE')); ?></a>
+                <a href="#"><?php echo str_replace(' ', '<br/>', $this->lang->line('main_CREATE_FAN_PAGE')); ?></a>
             </div>
         </div>
         <div class="row">
@@ -380,117 +229,5 @@
     </div>
 
 
-
-
 </div>
 
-
-
-
-
-
-
-
-
-
-
-<!--<div id="myResults" class="span8">
-    <div class="span3" id="results1">
-        <img class="maxImageSize" src="http://chasingthepint.com/img/companies/CompanyB.jpg" alt="" width="205" height="107" />
-        <br />
-        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-        <br /><br /><br /><br />
-        <p class="resultsName">THE PEGASUS PUB</p>
-        <br />
-        <p class="resultsInfo">ARNHEM</p>
-        <br /><br /><br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-        <br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 7/10</p>
-        <br /><br />
-        <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-        <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-        <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-        <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-        <br /><br /><br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-        <br /><br />
-        <p class="resultsInfo firstEvent">n/a</p>
-        <br /><br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-        <br /><br />
-        <p class="resultsInfo firstEvent">n/a</p>
-        <br />
-        <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow textSizeButton"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-    </div>
-    <div class="span3" id="results2">
-        <img class="maxImageSize" src="http://www.disco-panel.com/NIGHTCLUB%20AND%20BAR%20LIGHTING%20DESIGN%20AND%20DECOR.jpg" alt="" width="205" height="107" />
-
-         REPETED 
-        <br />
-        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-        <br /><br /><br /><br />
-        <p class="resultsName">FLORIAN</p>
-        <br />
-        <p class="resultsInfo">ARNHEM</p>
-        <br /><br /><br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-        <br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 8/10</p>
-        <br /><br />
-        <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-        <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-        <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-        <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-        <br /><br /><br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-        <br /><br />
-        <p class="resultsInfo firstEvent">Irish dance contest @22:30</p>
-        <br /><br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-        <br /><br />
-        <p class="resultsInfo firstEvent">n/a</p>
-        <br />
-        <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow textSizeButton"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-         END OF REPETED 
-    </div>
-    <div class="span3" id="results3">
-        <img class="maxImageSize" src="http://0.tqn.com/d/cruises/1/0/1/V/4/Casino_Bar_121.JPG" alt="" width="205" height="107" />
-         REPETED 
-        <br />
-        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_BAR_LIST'); ?></a></div>
-        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_FAVORITES'); ?></a></div>
-        <div class="span1 addToList"><a href="#" class="addToListA"><?php echo $this->lang->line('main_ADD_TO_PUB_CRAWL'); ?></a></div>
-        <br /><br /><br /><br />
-        <p class="resultsName">CAFE MEIJERS</p>
-        <br />
-        <p class="resultsInfo">ARNHEM</p>
-        <br /><br /><br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_OPEN_TODAY'); ?> 20:00 - 02:00 am</p>
-        <br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_RATED'); ?> 8.5/10</p>
-        <br /><br />
-        <p class=""><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></p>
-
-        <img class="maxImageSize2" src="http://www.2beerguys.com/images/forblog/guinness_logo_white.jpg" alt="" width="50" height="38" />
-        <img class="maxImageSize2" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Murphysstoutlogo.jpg" alt="" width="50" height="38" />
-        <img class="maxImageSize2" src="http://greatbrewers.com/sites/default/files/images/Palm%20Beer%20Logo.jpg" alt="" width="50" height="38" />
-        <br /><br /><br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_EVENT_TONIGHT'); ?></p>
-        <br /><br />
-        <p class="resultsInfo firstEvent">n/a</p>
-        <br /><br />
-        <p class="resultsInfo"><?php echo $this->lang->line('main_FIRST_PROMO_TONIGHT'); ?></p>
-        <br /><br />
-        <p class="resultsInfo firstEvent">n/a</p>
-        <br />
-        <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow textSizeButton"><?php echo $this->lang->line('main_VISIT_BAR_PAGE'); ?>&nbsp<i class="icon-play icon-white"></i></button>
-         END OF REPETED -->
-    </div>
-</div>

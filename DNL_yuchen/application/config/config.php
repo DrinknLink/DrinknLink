@@ -14,9 +14,8 @@
 | path to your installation.
 |
 */
-// $config['base_url']	= 'http://server5.starthosting.nl/DNL_yuchen_dario/DNL_yuchen';
-$config['base_url']	= 'http://localhost/DNL_yuchen';
-
+$config['base_url']	= 'http://drinknlink.com/DNL_yuchen';
+// $config['base_url']	= 'http://localhost/DNL_yuchen';
 /*
 |--------------------------------------------------------------------------
 | Index File
