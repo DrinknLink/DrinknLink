@@ -10,6 +10,7 @@ function initialize()
         center: new google.maps.LatLng(52.09179, 5.11457),
         zoom: 13,
         panControl: false,
+        zoomControl: true,
         zoomControlOptions: {
             position: google.maps.ControlPosition.TOP_RIGHT
         },
@@ -18,10 +19,7 @@ function initialize()
         streetViewControl: true,
         overviewMapControl: false,
         rotateControl: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        draggable: false, 
-        scrollwheel: false, 
-        disableDoubleClickZoom: true
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }

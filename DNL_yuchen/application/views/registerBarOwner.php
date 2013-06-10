@@ -21,10 +21,10 @@
 						</div>	
 						<div class="divider"><hr><?php echo $this->lang->line('main_OR'); ?><hr></div>	
 						<div>
-							<a href="/registerfree" id="register-free" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_CREATE_FREE_USER_ACCOUNT'); ?></label></a>							
+							<a href="registerUser" id="register-free" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_CREATE_FREE_USER_ACCOUNT'); ?></label></a>							
 						</div>
 						<div>
-							<a href="/registerbar" id="register-barowner" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_REGISTER_AS_BAR_OWNER'); ?></label></a>							
+							<a href="registerBarOwner" id="register-barowner" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_REGISTER_AS_BAR_OWNER'); ?></label></a>							
 						</div>
 					</div>
 				</div>

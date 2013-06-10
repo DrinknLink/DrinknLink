@@ -1,17 +1,16 @@
 <div id="grid-home" class="column-center">
     <div class="column column-1">	
 
-        
         <div class="row">          
             <!-- Login -->
-            <div id="login-bar" class="dnl-ui-rounded-corners dnl-ui-gradient-1">
+            <div id="login-bar" class="dnl-ui-rounded-corners dnl-ui-gradient-1">									
                 <div>
                     <div><a href="#"><img alt="Login with Facebook" src='common/img/login_with_facebook.png' /></a></div>
                     <div><a href="#"><img alt="Login with twitter" src='common/img/login_with_twitter.png' /></a></div>
                 </div>	
-                <div class="divider"><hr><?php echo $this->lang->line('main_OR'); ?><hr></div>
+                <div class="divider"><hr style="padding-bottom: -20px;"><?php echo $this->lang->line('main_OR'); ?><hr></div>
                 <div>
-                    <form id="frm-login" action="/auth/login/barowner" method="post">
+                    <form id="frm-login" action="/auth/login/barowner" method="post" style="margin-top: 25px;">
                         <div>
                             <div><input name="username" type="text" placeholder="<?php echo $this->lang->line('main_EMAIL_OR_USERNAME'); ?>" value="" /></div>
                             <div><input name="password" type="password" placeholder="<?php echo $this->lang->line('main_PASSWORD'); ?>" value="" /></div>
@@ -24,10 +23,10 @@
                 </div>	
                 <div class="divider"><hr><?php echo $this->lang->line('main_OR'); ?><hr></div>	
                 <div>
-                    <a href="/registerfree" id="register-free" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_CREATE_FREE_USER_ACCOUNT'); ?></label></a>							
+                    <a href="registerUser" id="register-free" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_CREATE_FREE_USER_ACCOUNT'); ?></label></a>							
                 </div>
                 <div>
-                    <a href="/registerbar" id="register-barowner" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_REGISTER_AS_BAR_OWNER'); ?></label></a>							
+                    <a href="registerBarOwner" id="register-barowner" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_REGISTER_AS_BAR_OWNER'); ?></label></a>							
                 </div>
             </div>
         </div>
@@ -35,111 +34,94 @@
         <div class="row">
             <div id="gmaps">
                 <!-- Map -->
-                <div id="googleMap"></div> 
-                <div id="choiceDiv" class="dnl-ui-gradient-1 dnl-ui-drop-shadow dnl-ui-rounded-corners">
-                    <h1></i><?php echo $this->lang->line('main_YOUR_CHOICES'); ?></h1>
-                    <a id="minimizeBtn" href ="javascript:void(0);"><?php echo $this->lang->line('main_MINIMIZE'); ?></a>
-                    <p><?php echo $this->lang->line('main_FOR'); ?> CityName</p>
-                    <div class="content" id="contentDiv">
-                        <ul class="nav nav-list">
-                            <li><p><i class="icon-ok"></i> bar</p></li>
-                            <li><p><i class="icon-ok"></i> terras</p></li>
-                            <li><p><i class="icon-ok"></i> wifi</p></li>
-                            <li><p><i class="icon-ok"></i> live sport</p></li>
-                        </ul>
+                <div id="googleMap" style="width:918px;height:250px;"></div> 
+                <!--  -->
+                <div id="choiceDiv" style="position: absolute; width: 200px; height: 220px; margin:-235px 0 0 15px;" class="dnl-ui-gradient-1 dnl-ui-drop-shadow dnl-ui-rounded-corners">
+                    <h1 style="font-size: 22px; margin-left: 15px; margin-top: 15px;"><?php echo $this->lang->line('main_YOUR_CHOICES'); ?></h1>
+                    <a id="minimizeBtn" href ="javascript:void(0);" style="float: right; font-size: 10px; margin-top: -45px; margin-right: 5px; color: #93a2c4;"><?php echo $this->lang->line('main_MINIMIZE'); ?></a>
+                    <p style="margin-left: 12px; font-size: 13px; margin-top: 10px;"><?php echo $this->lang->line('main_FOR'); ?> CityName</p>
+                    <div class="content" style="width: 185px; height: 120px; margin-left: 8px; margin-top: -15px;">
+                        <p style="margin-left: 10px;">- Bar</p>
+                        <p style="margin-top: -20px; margin-left: 10px;">- Terras</p>
+                        <p style="margin-top: -20px; margin-left: 10px;">- wifi</p>
+                        <p style="margin-top: -20px; margin-left: 10px;">- live sport</p>
+                        <p style="margin-top: -20px; margin-left: 10px;">- bla</p>
+                        <p style="margin-top: -20px; margin-left: 10px;">- bla</p>
+                        <p style="margin-top: -20px; margin-left: 10px;">- bla</p>
+                        <p style="margin-top: -20px; margin-left: 10px;">- bla</p>
+                        <p style="margin-top: -20px; margin-left: 10px;">- bla</p>
                     </div>
                 </div>
-                <a id="maximizeBtn" href ="javascript:void(0);" class="btn btn-small"><i class="icon-resize-full"></i></a>
+                <a id="maximizeBtn" href ="javascript:void(0);" class="btn btn-small" style="position: absolute; height: 20px; margin:-32px 0 0 0px;"><?php echo $this->lang->line('main_MAXIMIZE'); ?></a>
             </div>
 
         </div>
         <div class="row">
             <!-- Main body right -->
-            <div id="mainPart" class="column column-1-2">
-                <div class="row">
-                    <div id="quick-search" class="dnl-ui-drop-shadow dnl-ui-rounded-corners">								
+            <div class="column column-1-2">
+                <div class="row" style="height: 500px;">
+                    <div id="quick-search" class="dnl-ui-drop-shadow dnl-ui-rounded-corners" style="padding-top: 10px;">								
 
-
-                        <div class="span3">
-                            <h1><?php echo $this->lang->line('main_ADVANCED_SEARCH'); ?></h1>
-                        </div>
-                        <div class="span6" id="divSearch">
-                            <div class="span2" id="textSearch">
-                                <p><b><?php echo $this->lang->line('main_CITY_SEARCH'); ?></b></p>
+                        <div class="row" style="width: 900px;">
+                            <div class="twofifth bg-lightblue" style="width: auto;">
+                                <h1><?php echo $this->lang->line('main_ADVANCED_SEARCH'); ?></h1>
                             </div>
-                            <div class="span1" id="inputSearch">
-                                <input name="csearch" type="text" id="inputS" placeholder="<?php echo $this->lang->line('main_WRITE_NAME_SUGGESTIONS_WILL_APPEAR'); ?>" value="" />
-                            </div>
-                            <div class="span1" id="btnSearch">
-                                <button type="button" id="buttonS" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow"><i class="icon-search icon-white"></i>&nbsp<?php echo $this->lang->line('main_SEARCH'); ?></button>
-                            </div>
-                        </div>
-
-                        <div id="choicesSearch" class="span9">
-                            <div class="tabbable">
-                                <ul class="nav nav-tabs">                              
-                                    <li><a href="#tab1" data-toggle="tab"><i class="icon-star-empty"></i>&nbsp<?php echo $this->lang->line('main_BAR_GRADING'); ?></a></li>
-                                    <li><a href="#tab2" data-toggle="tab"><i class="icon-glass"></i>&nbsp<?php echo $this->lang->line('main_BAR_PUB_TYPE'); ?></a></li>
-                                    <li><a href="#tab3" data-toggle="tab"><i class="icon-list-alt"></i>&nbsp<?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></a></li>
-                                    <li class="active"><a href="#tab4" data-toggle="tab"><i class="icon-music"></i>&nbsp<?php echo $this->lang->line('main_MUSIC'); ?></a></li>
-                                    <li><a href="#tab5" data-toggle="tab"><i class="icon-retweet"></i>&nbsp<?php echo $this->lang->line('main_ATMOSPHERE'); ?></a></li>
-                                    <li><a href="#tab6" data-toggle="tab"><i class="icon-shopping-cart"></i>&nbsp<?php echo $this->lang->line('main_PRICES'); ?></a></li>
-                                    <li><a href="#tab7" data-toggle="tab"><i class="icon-wrench"></i>&nbsp<?php echo $this->lang->line('main_BAR_SERVICES'); ?></a></li>
-                                    <li><a href="#tab8" data-toggle="tab"><i class="icon-certificate"></i>&nbsp<?php echo $this->lang->line('main_EVENTS_AND_PROMOTIONS'); ?></a></li>
-                                </ul>
-                                <div class="tab-content">
-
-                                    <div class="tab-pane" id="tab1">
-                                        <div class="span8 spaceCheckbox">
-                                            ...
-                                        </div>
+                            <div class="threefifth bg-lightblue" style="width: auto;">
+                                <div class="row" style="width: 600px; margin-top: 10px; margin-left: 40px;">
+                                    <div class="third bg-blue" style="width: auto; margin-top: 7px;">
+                                        <p><b><?php echo $this->lang->line('main_CITY_SEARCH'); ?></b></p>
                                     </div>
-                                    <div class="tab-pane" id="tab2">
-                                        <div class="span8 spaceCheckbox">
-                                            ...
-                                        </div>
+                                    <div class="third bg-blue" style="width: auto;">
+                                        <input name="csearch" type="text" style="display:block; width: 300px; height: 34px;" placeholder="<?php echo $this->lang->line('main_WRITE_NAME_SUGGESTIONS_WILL_APPEAR'); ?>" value="" />
                                     </div>
-                                    <div class="tab-pane" id="tab3">
-                                        <div class="span8 spaceCheckbox">
-                                            ...
-                                        </div>
+                                    <div class="third bg-blue" style="width: auto;">
+                                        <button type="button" id="" style="width: 150px; height: 36px; border:1px solid silver;" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow"><?php echo $this->lang->line('main_SEARCH'); ?></button>
                                     </div>
-                                    <div class="tab-pane active" id="tab4">
-                                        <div class="span8 spaceCheckbox">
-                                            <input type="checkbox" name="vehicle" value="Car"> <?php echo $this->lang->line('main_DANCE'); ?>
-                                            <input type="checkbox" name="vehicle" value="Car"> <?php echo $this->lang->line('main_LIVE_MUSIC'); ?>
-                                            <input type="checkbox" name="vehicle" value="Car"> <?php echo $this->lang->line('main_KARAOKE'); ?>
-                                            <input type="checkbox" name="vehicle" value="Car"> <?php echo $this->lang->line('main_PUB_QUIZ'); ?>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab5">
-                                        <div class="span8 spaceCheckbox">
-                                            ...
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab6">
-                                        <div class="span8 spaceCheckbox">
-                                            ...
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab7">
-                                        <div class="span8 spaceCheckbox">
-                                            ...
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab8">
-                                        <div class="span8 spaceCheckbox">
-                                            ...
-                                        </div>
-                                    </div>
-
-                                </div>
+                                </div>   
                             </div>
                         </div>
 
-
-
-
+                        <nav class="nav-tabs" data-toggle="tabs" data-height="equal" style="margin-left: 20px; margin-bottom: 40px;">
+                            <ul>
+                                <li><a href="#tab1"><?php echo $this->lang->line('main_BAR_GRADING'); ?></a></li>
+                                <li><a href="#tab2"><?php echo $this->lang->line('main_BAR_PUB_TYPE'); ?></a></li>
+                                <li><a href="#tab3"><?php echo $this->lang->line('main_BEERS_ON_DRAFT'); ?></a></li>
+                                <li><a href="#tab4" class="active"><?php echo $this->lang->line('main_MUSIC'); ?></a></li>
+                                <li><a href="#tab5"><?php echo $this->lang->line('main_ATMOSPHERE'); ?></a></li>
+                                <li><a href="#tab6"><?php echo $this->lang->line('main_PRICES'); ?></a></li>
+                                <li><a href="#tab7"><?php echo $this->lang->line('main_BAR_SERVICES'); ?></a></li>
+                                <li><a href="#tab8"><?php echo $this->lang->line('main_EVENTS_AND_PROMOTIONS'); ?></a></li>
+                            </ul>
+                        </nav>
+                        <div style="margin-left: 35px;">
+                            <div id="tab1">
+                                ...
+                            </div>
+                            <div id="tab2">
+                                ...
+                            </div>
+                            <div id="tab3">
+                                ...
+                            </div>
+                            <div id="tab4">
+                                <input style="margin-left: 10px;" type="checkbox" name="vehicle" value="Car"> <?php echo $this->lang->line('main_DANCE'); ?>
+                                <input style="margin-left: 80px;" type="checkbox" name="vehicle" value="Car"> <?php echo $this->lang->line('main_LIVE_MUSIC'); ?>
+                                <input style="margin-left: 80px;" type="checkbox" name="vehicle" value="Car"> <?php echo $this->lang->line('main_KARAOKE'); ?>
+                                <input style="margin-left: 80px;" type="checkbox" name="vehicle" value="Car"> <?php echo $this->lang->line('main_PUB_QUIZ'); ?>
+                            </div>
+                            <div id="tab5">
+                                ...
+                            </div>
+                            <div id="tab6">
+                                ...
+                            </div>
+                            <div id="tab7">
+                                ...
+                            </div>
+                            <div id="tab8">
+                                ...
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,7 +133,7 @@
     <div class="column column-2">				
         <div class="row">
             <div id="create-fan-page" class="image-button">
-                <a href="<?php echo base_url(); ?>home/loggedinsearchresults"><?php echo str_replace(' ', '<br/>', $this->lang->line('main_CREATE_FAN_PAGE')); ?></a>
+                <a href="#"><?php echo str_replace(' ', '<br/>', $this->lang->line('main_CREATE_FAN_PAGE')); ?></a>
             </div>
         </div>
         <div class="row">

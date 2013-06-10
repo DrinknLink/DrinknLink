@@ -2,6 +2,26 @@
 
 /*
 |--------------------------------------------------------------------------
+| Social Medias
+|--------------------------------------------------------------------------
+|
+ */
+define('FACEBOOK_APP_ID', '374269069346722');
+define('FACEBOOK_APP_SECRET', '4cc01b2b17f17f21eb720ee898b98141');
+
+define('TWITTER_CONSUMER_KEY', 'Dm3qrK4VhbsnwAKk4Vikw');
+define('TWITTER_CONSUMER_SECRET', '6TQZPJHH2oq4sGZgJ30sma4BPJqiNqylfuocAgdrOo');
+define('TWITTER_ACCESS_TOKEN', '290942213-kFb64Lz9xHREszlQo9348eWQmmBqCbrrnvfKyOcz');
+define('TWITTER_ACCESS_TOKEN_SECRET', 'EPWjR0xoZcEKVxpruj9X915yjY0ZT175LjwFc09pOVA');
+
+define('FLICKR_KEY', '932d7b3cd1460dd42ac67af95c805311');
+define('FLICKR_SECRET', 'a9581b3b27aaab5c');
+
+define('GOOGLE_MAP_CLIENT_ID', '714212932054.apps.googleusercontent.com');
+define('GOOGLE_MAP_CLIENT_SECRET', 'EzNesMQI2ZMv1een3Xi5FbD5');
+
+/*
+|--------------------------------------------------------------------------
 | File and Directory Modes
 |--------------------------------------------------------------------------
 |

@@ -8,8 +8,9 @@ class search extends CI_Controller {
     }
 
     public function index() {
+    	$this->load->view ('snippets/common');
     	$this->load->view ('snippets/top');
-//     	$this->load->view ('home');
+    	$this->load->view ('LoggedInSearchResults');
     	$this->load->view ('snippets/footer');
     }
     

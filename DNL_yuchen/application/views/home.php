@@ -1,37 +1,6 @@
-		<div id="grid-home" class="column-center">
-			<div class="column column-1">	
-                            
-				<div class="row">          
-                                    <!-- Login -->
-					<div id="login-bar" class="dnl-ui-rounded-corners dnl-ui-gradient-1">									
-						<div>
-							<div><a href="#"><img alt="Login with Facebook" src='common/img/login_with_facebook.png' /></a></div>
-							<div><a href="#"><img alt="Login with twitter" src='common/img/login_with_twitter.png' /></a></div>
-						</div>	
-						<div class="divider"><hr><?php echo $this->lang->line('main_OR'); ?><hr></div>
-						<div>
-							<form id="frm-login" action="/auth/login/barowner" method="post">
-								<div>
-									<div><input name="username" type="text" placeholder="<?php echo $this->lang->line('main_EMAIL_OR_USERNAME'); ?>" value="" /></div>
-									<div><input name="password" type="password" placeholder="<?php echo $this->lang->line('main_PASSWORD'); ?>" value="" /></div>
-								</div>
-								<div>					
-									<div><button type="submit" class="dnl-ui-button"><?php echo $this->lang->line('main_LOGIN'); ?></button></div>
-									<div><a href="#"><?php echo $this->lang->line('main_FORGOT_PASSWORD'); ?></a></div>	
-								</div>		
-							</form>
-						</div>	
-						<div class="divider"><hr><?php echo $this->lang->line('main_OR'); ?><hr></div>	
-						<div>
-							<a href="/registerfree" id="register-free" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_CREATE_FREE_USER_ACCOUNT'); ?></label></a>							
-						</div>
-						<div>
-							<a href="/registerbar" id="register-barowner" class="dnl-ui-button"><span class="icon-container"><span class="dnl-ui-sprite plus"></span></span><label><?php echo $this->lang->line('main_REGISTER_AS_BAR_OWNER'); ?></label></a>							
-						</div>
-					</div>
-				</div>
+		<div id="grid-home" class="container">
+			<div class="column column-1">				
 				<div class="row">
-                                    <!-- Main body left -->
 					<div class="column column-1-1">
 						<div class="row">
 							<div id="meet-up-with-friends" class="image-button dnl-ui-drop-shadow">
@@ -44,7 +13,6 @@
 							</div>
 						</div>
 					</div>
-                                    <!-- Main body right -->
 					<div class="column column-1-2">
 						<div class="row">
 							<div id="quick-search" class="dnl-ui-drop-shadow dnl-ui-rounded-corners">								
@@ -85,19 +53,17 @@
 										<button type="button" class="dnl-ui-rounded-corners dnl-ui-drop-shadow"><span><span class="dnl-ui-sprite"></span></span><span><?php echo $this->lang->line('main_FIND_EVEN_MORE'); ?></span></button>
 									</li>
 								</ul>													
-								<button type="button" id="advanced-search" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow"><div class="dnl-ui-sprite loop"></div><h2><?php echo $this->lang->line('main_ADVANCED_SEARCH'); ?></h2></button>								
+								<div id="advanced-search" class="dnl-ui-button dnl-ui-button-black dnl-ui-text-shadow"><div class="dnl-ui-sprite loop"></div><h2><?php echo $this->lang->line('main_ADVANCED_SEARCH'); ?></h2></div>								
 							</div>
 						</div>
 					</div>
 					<div class="dnl-ui-clearfix"></div>	
 				</div>
-                            <!-- Google maps -->
 				<div class="row">
 					<div id="gmaps">
 						<iframe width="918" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.nl/?ie=UTF8&amp;t=m&amp;ll=52.095038,5.1192&amp;spn=0.00791,0.039353&amp;z=15&amp;output=embed"></iframe>
 					</div>
 				</div>
-                            <!-- Main body bottom -->
 				<div class="row">
 					<div class="column column-1-3">
 						<div id="dnl-about" class="dnl-ui-rounded-corners">
@@ -138,8 +104,6 @@
 					<div class="dnl-ui-clearfix"></div>
 				</div>
 			</div>
-                    
-                    <!-- Overside -->
 			<div class="column column-2">				
 				<div class="row">
 					<div id="create-fan-page" class="image-button">
@@ -156,8 +120,6 @@
 					<div class="advert"></div>
 				</div>
 			</div>
-                    
-                    <!-- social media -->
 			<div class="dnl-ui-rounded-corners" id="footer-social-media">
 				<div class="icon"><span class="dnl-ui-sprite facebook"></span></div>
 				<div class="text"><span><?php echo $this->lang->line('social_media_STAY_INFORMED_WITH_FACEBOOK'); ?></span> <a href="#"><?php echo $this->lang->line('social_media_AND_LIKE_US_ON_FACEBOOK'); ?></span></a></div>
@@ -168,8 +130,6 @@
 				<div class="icon"><span class="dnl-ui-sprite linkedin"></span></div>
 				<div class="text"><span><?php echo $this->lang->line('social_media_JON_US_ON_LINKEDIN'); ?></span> <a href=""><?php echo $this->lang->line('social_media_VIA_LINKEDIN'); ?></a></div>		
 			</div>
-                    
-                    
 		</div>
 		
 		
