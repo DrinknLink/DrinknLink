@@ -32,7 +32,7 @@
 <!--        <script type="text/javascript" src="common/js/navi.js"></script>-->
 
         <!-- my jQuery -->
-        <script type="text/javascript" src="common/js/jquery/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="common/js/jquery/jquery.sagud.js"></script>
 
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
