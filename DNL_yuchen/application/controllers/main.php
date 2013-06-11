@@ -1,4 +1,5 @@
 <?php
+
 class main extends CI_Controller {
 
     function __construct() {
@@ -10,31 +11,43 @@ class main extends CI_Controller {
     }
 
     public function index() {
-    	$this->load->view ('snippets/common');
+        //$this->getBasicSite(); // run basic site
+        $this->runSite();
+    }
+
+    public function runSite() {
+        $this->load->view('snippets/common');
 //     	$this->load->view ('test/testModal');
-    	$this->load->view ('snippets/footer');
+        $this->load->view('snippets/footer');
     }
-    
-    public function login(){
-    	$email = $_POST['email'];
-    	$password = $_POST['password'];
-    	$result = selectSql('User',array('email'=>$email));
-    	if ($result->num_rows() == 0){
-    		echo json_encode( array('code' => '100001', 'msg'=>'email does not exist'));
-    		exit;
-    	}
-    	$result = selectSql('User',array('email'=>$email,'password'=>$password));
-    	if ($result->num_rows() == 0){
-    		echo json_encode( array('code' => '100002', 'msg'=>'wrong password'));
-    		exit;
-    	}else{
-    		echo json_encode( array('code' => '100000', 'msg'=>'login success'));
-    		exit;
-    	}
+
+    public function login() {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $result = selectSql('User', array('email' => $email));
+        if ($result->num_rows() == 0) {
+            echo json_encode(array('code' => '100001', 'msg' => 'email does not exist'));
+            exit;
+        }
+        $result = selectSql('User', array('email' => $email, 'password' => $password));
+        if ($result->num_rows() == 0) {
+            echo json_encode(array('code' => '100002', 'msg' => 'wrong password'));
+            exit;
+        } else {
+            echo json_encode(array('code' => '100000', 'msg' => 'login success'));
+            exit;
+        }
     }
-    
-    public function getNaviBar(){
-    	$naviBar = $this->load->view('snippets/navi',null,true);
-    	echo json_encode( array('code' => '100001', 'msg'=>'success', 'html'=>$naviBar));
+
+    public function getNaviBar() {
+        $naviBar = $this->load->view('snippets/navi', null, true);
+        echo json_encode(array('code' => '100001', 'msg' => 'success', 'html' => $naviBar));
     }
+
+    // basic site
+    public function getBasicSite() {
+        $this->load->view('basic/common_basic');
+        $this->load->view('basic/body_basic');
+    }
+
 }
