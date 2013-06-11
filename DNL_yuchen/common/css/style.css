@@ -43,6 +43,7 @@ body {
 .footer-ul {
 	min-width: 300px;
 	float: left;
+        margin-left: 100px;
 }
 
 #map-canvas {
