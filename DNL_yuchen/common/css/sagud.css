@@ -775,5 +775,9 @@ p#loggedInNameStyle {
     width: 700px;
 }
 
+#basicNav {
+    width: 1000px;
+}
+
 
 /** END OF BASIC PAGE **/
