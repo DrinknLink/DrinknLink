@@ -6,13 +6,12 @@ class main extends CI_Controller {
         $this->load->library('session');
         $this->load->helper('dbsql');
         $this->load->helper('login');
+        checkLogin();
     }
 
     public function index() {
-//     	$_SESSION['username'] = '';
-//     	$logined = checkLogin($_SESSION['username']);
     	$this->load->view ('snippets/common');
-    	$this->load->view ('test/testModal');
+//     	$this->load->view ('test/testModal');
     	$this->load->view ('snippets/footer');
     }
     

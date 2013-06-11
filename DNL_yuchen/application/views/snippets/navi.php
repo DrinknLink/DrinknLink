@@ -61,11 +61,12 @@
 				</div>
 			</div>
 		</div>
-		<!-- Login Modal -->
+		<!-- Account Modal -->
 		<div class="fb-root"></div>
 		<script type="text/javascript" src="common/js/facebook/fbLogin.js" ></script>
 	    <div id="loginModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
 	    	<div class="tab-content">
+				<!-- Login Tab -->
 				<div class="tab-pane active" id="login">
 				    <div class="modal-header">
 					    <button type="button" class="close" id="modal-login-close" data-dismiss="modal">x</button>
@@ -87,6 +88,7 @@
 					    <a href="#register" data-toggle="tab" class="btn btn-primary">Register</a>
 				    </div>
 				</div>
+				<!-- Register Tab -->
 				<div class="tab-pane fade" id="register">
 	                <div class="modal-header">
 					    <button type="button" class="close" id="modal-login-close" data-dismiss="modal">x</button>

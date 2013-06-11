@@ -16,7 +16,6 @@ $(function(){
     	    }
     	}
     });
-    
 });
 
 function _register(){
