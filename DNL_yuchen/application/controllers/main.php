@@ -1,5 +1,4 @@
 <?php
-
 class main extends CI_Controller {
 
     function __construct() {
@@ -13,11 +12,7 @@ class main extends CI_Controller {
 //     	$_SESSION['username'] = '';
 //     	$logined = checkLogin($_SESSION['username']);
     	$this->load->view ('snippets/common');
-    	$this->load->view ('snippets/top');
-//     	if($logined)
-    		$this->load->view ('home');
-//     	else
-//     		$this->load->view ('login');
+    	$this->load->view ('test/testModal');
     	$this->load->view ('snippets/footer');
     }
     

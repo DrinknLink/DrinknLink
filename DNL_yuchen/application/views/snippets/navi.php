@@ -1,3 +1,4 @@
+		<!-- Navi Bar -->
 		<div class="navbar navbar-fixed-top">
 		    <div class="navbar navbar-inverse">
 				<div class="navbar-inner">
@@ -30,7 +31,7 @@
 							
 							<ul class="nav pull-right">
 								<li>
-									<a href="javascript:;" data-toggle="modal" data-target="#loginModal"><font color="red">Login</font></a>
+									<a href="#loginModal" role="button" data-toggle="modal" ><font color="red">Login</font></a>
 								</li>
 								<li class="divider-vertical"></li>
 								<li class="dropdown">
@@ -60,23 +61,50 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal hide fade" id="loginModal">
-		    <div class="modal-header">
-			    <button type="button" class="close" id="modal-login-close">x</button>
-			    <h3>Login to Drink & Link</h3>
+		<!-- Login Modal -->
+		<div class="fb-root"></div>
+		<script type="text/javascript" src="common/js/facebook/fbLogin.js" ></script>
+	    <div id="loginModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	    	<div class="tab-content">
+				<div class="tab-pane active" id="login">
+				    <div class="modal-header">
+					    <button type="button" class="close" id="modal-login-close" data-dismiss="modal">x</button>
+					    <h3>Login to Drink & Link</h3>
+					</div>
+					<div class="modal-body">
+						<form method="post" action='javascript:_login();' name="login_form">
+						   	<p><input type="text" class="span3" name="eid" id="login-modal-email" placeholder="Email"></p>
+					    	<p><input type="password" class="span3" name="passwd" id="login-modal-password" placeholder="Password"></p>
+					    	<p><a class="" href="javascript:FB.login();"><img src="common/img/login_with_facebook.png"></a></p>
+							<p><a class=""><img src="common/img/login_with_twitter.png"></a></p>
+					    	<p><button type="submit" class="btn btn-primary">Log in</button>
+					    		<a href="#forgotpassword" data-toggle="tab">Forgot Password?</a>
+					    	</p>
+						</form>
+	               	</div>
+					<div class="modal-footer">
+					    New To DNL?
+					    <a href="#register" data-toggle="tab" class="btn btn-primary">Register</a>
+				    </div>
+				</div>
+				<div class="tab-pane fade" id="register">
+	                <div class="modal-header">
+					    <button type="button" class="close" id="modal-login-close" data-dismiss="modal">x</button>
+					    <h3>Register to Drink & Link</h3>
+					</div>
+					<div class="modal-body">
+						<form method="post" action='javascript:_login();' name="login_form">
+						   	<p><input type="text" class="span3" name="eid" id="login-modal-email" placeholder="Email"></p>
+					    	<p><input type="password" class="span3" name="passwd" id="login-modal-password" placeholder="Password"></p>
+					    	<p><a class="" href="javascript:FB.login();"><img src="common/img/login_with_facebook.png"></a></p>
+							<p><a class=""><img src="common/img/login_with_twitter.png"></a></p>
+					    	<p><button type="submit" class="btn btn-primary">Sign in</button></p>
+						</form>
+	               	</div>
+					<div class="modal-footer">
+					    Already have DNL account?
+					    <a href="#login" data-toggle="tab" class="btn btn-primary">Login</a>
+				    </div>
+	            </div>
 			</div>
-			    <div class="modal-body">
-			    <form method="post" action='javascript:_login();' name="login_form">
-			    	<p><input type="text" class="span3" name="eid" id="login-modal-email" placeholder="Email"></p>
-			    	<p><input type="password" class="span3" name="passwd" id="login-modal-password" placeholder="Password"></p>
-			    	<p><button type="submit" class="btn btn-primary">Sign in</button>
-			    		<a href="#">Forgot Password?</a>
-				    </p>
-			    </form>
-			</div>
-			<div class="modal-footer">
-			    New To DNL?
-			    <a href="registerUser" class="btn btn-primary">Register</a>
-		    </div>
 	    </div>
-	    
