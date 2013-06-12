@@ -754,3 +754,30 @@ p#loggedInNameStyle {
 }
 
 /** END OF BAR PAGE **/
+
+/** BASIC PAGE **/
+
+#navDiv {
+    background-color: #dedcd6;
+    height: 300px;
+    border: 1px solid silver;
+    padding: 10px;  
+    margin-left: 47px;
+    float:left;
+    width: 176px;
+}
+#basicDiv {
+    background-color: white;
+    height: 479px;
+    border: 1px solid silver;
+    padding: 10px;  
+    margin-left: 20px;
+    width: 700px;
+}
+
+#basicNav {
+    width: 1000px;
+}
+
+
+/** END OF BASIC PAGE **/
