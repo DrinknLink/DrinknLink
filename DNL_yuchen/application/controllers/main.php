@@ -14,13 +14,6 @@ class main extends CI_Controller {
     	$this->load->view ('snippets/common');
     	$this->load->view ('snippets/footer');
         //$this->getBasicSite(); // run basic site
-//         $this->runSite();
-    }
-
-    public function runSite() {
-        $this->load->view('snippets/common');
-//     	$this->load->view ('test/testModal');
-        $this->load->view('snippets/footer');
     }
     
     public function login(){
