@@ -11,9 +11,6 @@ function latestTabel($prefix){
 	return $db->query($sql);
 }
 /*
- select操作封装
-* @param $sql 查询语句
-* 返回一个索引数组  暂时是*
 */
 function selectSql($table,$data=null,$orderby=null,$desc=false,$page=1,$num=10,$like=null,$range=null){
 	$db = DB();
@@ -21,7 +18,6 @@ function selectSql($table,$data=null,$orderby=null,$desc=false,$page=1,$num=10,$
 	if($table===NULL || $table === ''){
 		throw new Comm_Exception_Program('Should enter a table name');
 	}
-	//组合sql查询语句
 	if($orderby != null){
 		$orderby = ' ORDER BY '.$orderby;
 		if($desc != null){
@@ -82,10 +78,6 @@ function selectSql($table,$data=null,$orderby=null,$desc=false,$page=1,$num=10,$
 }
 
 /*
- * update操作封装
-* @param $table 表名
-* @param $condtion 数组，字段名=>值
-* @param $data 数据数组， 字段名=>值
 *
 */
 function updateSql($table, $condition, $data){
@@ -96,7 +88,7 @@ function updateSql($table, $condition, $data){
 	if($condition==='' || $condition===NULL){
 		throw new Comm_Exception_Program('Should enter update conditions');
 	}
-	//组合sql查询语句
+	//缁��sql�ヨ�璇��
 	$sql = $condition1 = $condition2 = '';
 	$condtiontemp1 = $condtiontemp2 = array();
 	foreach ($condition as $ckey => $cvalue) {
@@ -112,9 +104,6 @@ function updateSql($table, $condition, $data){
 	return;
 }
 /*
- * insert操作封装
-* @param $table 表名
-* @param $data 数据数组，字段名=>值
 *
 */
 function insertSql($table, $data){
@@ -122,7 +111,6 @@ function insertSql($table, $data){
 	if($table===NULL || $table === ''){
 		throw new Comm_Exception_Program('Should enter a table name');
 	}
-	//组合sql查询语句
 	$sql = $condition1 = $condition2 = '';
 	$keys = array_keys($data);
 	$values = array_values($data);

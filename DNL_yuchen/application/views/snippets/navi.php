@@ -1,3 +1,4 @@
+		<script type="text/javascript" src="common/js/account.js"></script>
 		<!-- Navi Bar -->
 		<div class="navbar navbar-fixed-top">
 		    <div class="navbar navbar-inverse">
