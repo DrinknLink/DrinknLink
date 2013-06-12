@@ -1,16 +1,15 @@
 <?php
 
-function checkLogin(){
-    if(empty($_SESSION['userinfo'])){
-//         if(empty($_COOKIE['email']) || empty($_COOKIE['password'])){
+function checkLogin($userinfo){
+    if(!isset($userinfo)){
+        if(!isset($_COOKIE['email']) || !isset($_COOKIE['password'])){
         	if(strpos($_SERVER['REQUEST_URI'],"login") === false){ 
         		header("location:".base_url()."login?req_url=".$_SERVER['REQUEST_URI']);
         	}
-//         }else{
-//             $user = login($_COOKIE['email'],$_COOKIE['password']);
-//         }
+        }else{
+            $user = login($_COOKIE['email'],$_COOKIE['password']);
+        }
     }else if(strpos($_SERVER['REQUEST_URI'],"login") != false){
-    	print_r($_SESSION);
 //     	header("location:".base_url()."main");
     }
 }
