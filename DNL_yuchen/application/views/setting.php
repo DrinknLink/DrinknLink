@@ -6,7 +6,7 @@
 			<ul class="nav nav-list bs-docs-sidenav">
 				<li class="">General</li>
 				<li class="">Security</li>
-				<li class="">Privicy</li>
+				<li class="">Privacy</li>
 				<li class="">Notifications</li>
 				<li class="active">Social Media</li>
 			</ul>
