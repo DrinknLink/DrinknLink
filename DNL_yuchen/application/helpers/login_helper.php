@@ -7,10 +7,12 @@ function checkLogin($userinfo){
         		header("location:".base_url()."login?req_url=".$_SERVER['REQUEST_URI']);
         	}
         }else{
-            $user = login($_COOKIE['email'],$_COOKIE['password']);
+        	header("location:".base_url()."login?req_url=".$_SERVER['REQUEST_URI']);
+        	//relogin
+//             $user = login($_COOKIE['email'],$_COOKIE['password']);
         }
     }else if(strpos($_SERVER['REQUEST_URI'],"login") != false){
-//     	header("location:".base_url()."main");
+    	header("location:".base_url()."main");
     }
 }
 

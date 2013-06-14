@@ -4,9 +4,9 @@ class setting extends CI_Controller {
 
     function __construct() {
         parent::__construct();
-        session_start();
         $this->load->helper('login');
-//         checkLogin($this->session->userdata());
+        checkLogin($this->session->userdata());
+        session_start();
     }
 
     public function index() {

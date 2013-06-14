@@ -4,13 +4,14 @@ class login extends CI_Controller {
 
     function __construct() {
         parent::__construct();
-        $this->load->library('session');
         $this->load->helper('dbsql');
         $this->load->helper('login');
-        checkLogin();
+        session_start();
+		checkLogin(@$_SESSION['userinfo']);
     }
 
     public function index() {
     	$this->load->view ('login');
     }
+    
 }

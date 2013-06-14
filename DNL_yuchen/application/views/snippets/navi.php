@@ -19,9 +19,6 @@
 									<a href="javascript:;">Notifications</a>
 								</li>
 								<li>
-									<a href="javascript:;">Messages</a>
-								</li>
-								<li class="dropdown">
 									<a href="javascript:;">Collections</a>
 								</li>
 							</ul>
@@ -32,7 +29,11 @@
 							
 							<ul class="nav pull-right">
 								<li>
-									<a href="#loginModal" role="button" data-toggle="modal" ><font color="red">Login</font></a>
+									<?php if(!isset($userinfo)){?>
+										<a href="#loginModal" role="button" data-toggle="modal" ><font color="red">Login</font></a>
+									<?php }else{?>
+										<a href="javascript:;"><font color="red"><?= $userinfo['email'] ?></font></a>
+									<?php }?>
 								</li>
 								<li class="divider-vertical"></li>
 								<li class="dropdown">
@@ -42,17 +43,11 @@
 									</a>
 									<ul class="dropdown-menu">
 										<li>
-											<a href="javascript:;">Action</a>
-										</li>
-										<li>
-											<a href="javascript:;">Another action</a>
-										</li>
-										<li>
-											<a href="javascript:;">Something else here</a>
+											<a href="javascript:;">Account Setting</a>
 										</li>
 										<li class="divider"></li>
 										<li>
-											<a href="javascript:;">Separated link</a>
+											<a href="javascript:_logout();">Logout</a>
 										</li>
 									</ul>
 								</li>

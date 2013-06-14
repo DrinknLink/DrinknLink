@@ -7,29 +7,22 @@
         <base href="<?php echo base_url() ?>"/>
 
         <!-- CSS -->
-        <link href="common/css/styleO.css" rel="stylesheet" />
-        <link href="common/css/sagud.css" rel="stylesheet" />
         <link href="common/css/bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="common/css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
-        <link href="common/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />     
 
         
         <!-- JS -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript" src="common/js/jquery/jquery.js"></script>
         <script type="text/javascript" src="common/js/jquery/jquery.validate.js"></script>
         <script type="text/javascript" src="common/js/jquery/jquery.metadata.js"></script>
-        <script type="text/javascript" src="common/js/jquery/jquery.mCustomScrollbar.concat.min.js"></script>        
         <!-- Bootstrap -->
         <script type="text/javascript" src="common/js/bootstrap/bootstrap.js"></script>
         <!-- Google Map -->
         <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="common/js/googleMaps.js"></script> 
         
-        <script type="text/javascript" src="common/js/jquery/jquery.quick.pagination.min.js"></script>
+        <script type="text/javascript" src="common/js/public.js"></script>
         <script type="text/javascript" src="common/js/account.js"></script>
-
-        <!-- my jQuery -->
-        <script type="text/javascript" src="common/js/jquery/jquery.mCustomScrollbar.js"></script>
 
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,9 +54,9 @@
 					    </div>
 						<!-- Register Tab -->
 						<div class="tab-pane fade" id="register">
-							<form method="post" action='javascript:_login();' name="login_form">
-							   	<p><input type="text" class="span3" name="eid" id="login-modal-email" placeholder="Email"></p>
-						    	<p><input type="password" class="span3" name="passwd" id="login-modal-password" placeholder="Password"></p>
+							<form id="frm-register" method="post" action='javascript:_register();' name="login_form">
+							   	<p><input type="text" class="" name="reg_email" id="reg-email" placeholder="Email"></p>
+						    	<p><input type="password" class="" name="reg_password" id="reg-password" placeholder="Password"></p>
 						    	<p><a class="" href="javascript:FB.login();"><img src="common/img/login_with_facebook.png"></a></p>
 								<p><a class=""><img src="common/img/login_with_twitter.png"></a></p>
 						    	<p><button type="submit" class="btn btn-primary">Sign in</button></p>
