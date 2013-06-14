@@ -13,13 +13,33 @@ class main extends CI_Controller {
     public function index() {
     	$this->load->view ('snippets/common');
     	$this->load->view ('snippets/footer');
-        //$this->getBasicSite(); // run basic site
-//         $this->runSite();
     }
-
-    public function runSite() {
-        $this->load->view('snippets/common');
-        $this->load->view('snippets/footer');
+    
+    public function login(){
+    	$req_url = $_POST['req_url'];
+    	$email = $_POST['email'];
+    	$password = $_POST['password'];
+    	$result = selectSql('User',array('email'=>$email));
+    	if ($result->num_rows() == 0){
+    		echo json_encode( array('code' => '100001', 'msg'=>'email does not exist'));
+    		exit;
+    	}
+    	$result = selectSql('User',array('email'=>$email,'password'=>$password));
+    	if ($result->num_rows() == 0){
+    		echo json_encode( array('code' => '100002', 'msg'=>'wrong password'));
+    		exit;
+    	}else{
+    		$row = $result->row_array();
+    		$_SESSION['userinfo'] = $row;
+    		setcookie("email", $row['email'], time()+3600*24*7);
+    		setcookie("password", $row['password'], time()+3600*24*7);
+    		
+    		if(strpos($req_url,"login") != false || $req_url == null){
+    			$req_url = "main";
+    		}
+    		echo json_encode( array('code' => '100000', 'msg'=>'login success', 'req_url'=>$req_url));
+    		exit;
+    	}
     }
 
     public function getNaviBar(){

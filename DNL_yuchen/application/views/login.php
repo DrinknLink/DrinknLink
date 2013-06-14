@@ -24,6 +24,9 @@
         <script type="text/javascript" src="common/js/public.js"></script>
         <script type="text/javascript" src="common/js/account.js"></script>
 
+        <!-- my jQuery -->
+        <script type="text/javascript" src="common/js/jquery/jquery.sagud.js"></script>
+
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
