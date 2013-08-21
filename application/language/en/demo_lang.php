@@ -1,0 +1,21 @@
+<?php
+$lang['0'] = "About Drink 'n Link";
+$lang['1'] = "Instantly know where the action is and easily meet up with friends at the best venues";
+$lang['2'] = "How far are we?";
+$lang['3'] = "How does it work?";
+$lang['4'] = "How does it work?";
+$lang['5'] = "View our short instruction video on";
+$lang['6'] = "Like us on Facebook";
+$lang['7'] = "Follow us on Twitter";
+$lang['8'] = "Join us on LinkedIn";
+$lang['9'] = "Investing and advertisement";
+$lang['10'] = "Read more";
+$lang['11'] = "Newsletter";
+$lang['12'] = "Contact";
+$lang['13'] = "About";
+$lang['14'] = "General";
+$lang['15'] = "Terms";
+$lang['16'] = "Advertise";
+$lang['17'] = "Design";
+$lang['18'] = "Twitter: Followers";
+$lang['19'] = "Facebook: Likes";

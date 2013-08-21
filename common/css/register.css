@@ -1,0 +1,254 @@
+body {
+	margin: 0px;
+	padding: 20px 0 0 0;
+	background-color: #dddad3;
+	background-image: url(../img/header.png);
+	background-position:50% 0;  
+    background-size:contain; 
+	background-repeat: no-repeat;
+}
+
+li {
+	list-style: none;
+}
+
+.title-red {
+	color: #e10000;
+}
+
+#languageBar {
+	height: 20px;
+	background-color: #000;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: 999;
+}
+
+#switch-language {
+    float: right;
+    color: silver;
+    font-size:12px;
+    margin-left: 4px
+}
+
+.divider-language { 
+    margin: 0px 5px; 
+}
+
+.dnl-ui-sprite { 
+    display:inline-block; 
+    vertical-align:top; 
+    background-repeat:no-repeat; 
+    background-image:url("../img/sprite.png"); 
+}
+.dnl-ui-sprite.nl-NL { 
+    background-position:-80px -175px; 
+    width:15px; 
+    height:20px; 
+} 
+.dnl-ui-sprite.en-US { 
+    background-position:-80px -155px; 
+    width:15px; 
+    height:20px; 
+}
+
+#getApp {
+	float: right;
+}
+
+#header {
+	padding: 0 15px;
+}
+
+#registerBar {
+	height: 80px;
+	background-color: #FFF;
+	border-radius: 5px;
+}
+
+#registerBar-login {
+	float: left;
+	width: 5%;
+	height: 100%;
+}
+
+#registerBar-social-media {
+	float: left;
+	width: 15%;
+}
+
+#registerBar-social-media-fb {
+}
+
+#registerBar-social-media-tw {
+	
+}
+
+#registerBar-login-email {
+	float: left;
+	width: 20%;
+}
+
+.registerBar-or {
+	float: left;
+	width: 5%;
+	height: 100%;
+}
+
+.registerBar-or-line {
+	height: 30%;
+	border: 1px #344770 solid;
+}
+
+#registerBar-login-button {
+	float: left;
+	width: 15%;
+}
+
+.registerBar-login-create {
+	float: left;
+	width: 17%;
+	height: 100%;
+}
+
+#main-content {
+	margin-top: 150px;
+	padding: 0 15px;
+}
+
+#description {
+}
+
+#registerPanel {
+	padding-bottom: 40px;
+}
+
+#ad {
+	height: 450px;
+	border: 1px #000 solid;
+	background: #FFF;
+}
+
+.sign-up {
+	margin-left: 5%;
+}
+
+.item {
+	height: 40px;
+}
+
+.title {
+	margin-left: 5%;
+	float: left;
+	width: 20%;
+	text-align: left;
+}
+
+.input {
+	float: left;
+	width: 70%;
+}
+
+.input-box {
+	width: 90%;	
+}
+
+.info {
+	float: left;
+	width: 5%;
+}
+
+.error-panel {
+	margin-left: 25%;
+}
+
+.error {
+	color: #e10000;
+}
+
+#register-submit {
+	height: 45px;
+	width: 150px;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#84837f), to(#5a5955));
+	background: -webkit-linear-gradient(#84837f, #5a5955);
+	background: -moz-linear-gradient(#84837f, #5a5955);
+	background: -ms-linear-gradient(#84837f, #5a5955);
+	background: -o-linear-gradient(#84837f, #5a5955);
+	background: linear-gradient(#84837f, #5a5955);
+	-pie-background: linear-gradient(#84837f, #5a5955);
+	behavior: url(http://www.drinknlink.com/common/plugins/PIE.htc);
+}
+
+#social-media-link {
+	margin: 20px 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f3f2f0), to(#edecea));
+	background: -webkit-linear-gradient(#f3f2f0, #edecea);
+	background: -moz-linear-gradient(#f3f2f0, #edecea);
+	background: -ms-linear-gradient(#f3f2f0, #edecea);
+	background: -o-linear-gradient(#f3f2f0, #edecea);
+	background: linear-gradient(#f3f2f0, #edecea);
+	-pie-background: linear-gradient(#f3f2f0, #edecea);
+	behavior: url(http://www.drinknlink.com/common/plugins/PIE.htc);
+}
+
+.social-media-link-detail{
+	height: 80px;
+	float: left;
+}
+
+.social-media-link-detail-img {
+	float: left;
+}
+
+.social-media-link-detail-text {
+	height: 80px;
+}
+
+#fb {
+	width: 60px;
+	height: 60px;
+	background: url(../img/sprite.png) -100px -160px;
+	margin: 10px;
+}
+#tw {
+	width: 60px;
+	height: 60px;
+	background: url(../img/sprite.png) -180px -160px;
+	margin: 10px;
+}
+#in {
+	width: 60px;
+	height: 60px;
+	background: url(../img/sprite.png) -260px -160px;
+	margin: 10px;
+}
+
+#bottom {
+	height: 150px;
+	background-color: #344770;
+}
+
+#bottom-content {
+}
+
+.bottom-list {
+	float: left;
+	color: #dddad3;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#bottom-logo {
+	height: 80px;
+	margin-left: 20px;
+}

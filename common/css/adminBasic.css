@@ -1,0 +1,183 @@
+#dnl-logo {
+	height: 80px;
+    margin: 20px;
+    width: 80px;
+}
+
+li {
+	list-style: none;
+}
+
+#bottom {
+	height: 150px;
+	background-color: #344770;
+}
+
+#bottom-content {
+}
+
+.bottom-list {
+	float: left;
+	color: #dddad3;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#bottom-logo {
+	height: 80px;
+	margin-left: 20px;
+}
+
+/* COLOR */
+.dark-blue {
+	color: #334770;
+}
+
+.light-blue {
+	color: #aabbde;
+}
+
+.dark-grey {
+	color: #c1c0be;
+}
+
+.light-grey {
+	color: #e2dfd9;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.title-red {
+	color: #e30000;
+}
+
+.link-brown {
+	color: #9F7113;
+}
+
+.green {
+	color: 009933;
+}
+
+/* SIZE */
+.size30 {
+	font-size: 30px;
+}
+
+
+/* ALIGN */
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+/* Typography */
+
+.y-outside-top {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.y-outside-middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.y-outside-bottom {
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.y-inside {
+	display:inline-block;
+}
+
+div.box-trio{
+	padding: 5px 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: #666 0px 0px 10px;
+	-moz-box-shadow: #666 0px 0px 10px;
+	box-shadow: #666 0px 0px 10px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFFFFF), to(#dbe0e6));
+	background: -webkit-linear-gradient(#FFFFFF, #dbe0e6);
+	background: -moz-linear-gradient(#FFFFFF, #dbe0e6);
+	background: -ms-linear-gradient(#FFFFFF, #dbe0e6);
+	background: -o-linear-gradient(#FFFFFF, #dbe0e6);
+	background: linear-gradient(#FFFFFF, #dbe0e6);
+	-pie-background: linear-gradient(#FFFFFF, #dbe0e6);
+	behavior: url(http://www.drinknlink.com/common/plugins/PIE.htc);
+}
+
+div.box-radius{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(http://www.drinknlink.com/common/plugins/PIE.htc);
+}
+
+div.box-shadow{
+	-webkit-box-shadow: #666 0px 0px 10px;
+	-moz-box-shadow: #666 0px 0px 10px;
+	box-shadow: #666 0px 0px 10px;
+	behavior: url(http://www.drinknlink.com/common/plugins/PIE.htc);
+}
+
+div.box-gradient{
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFFFFF), to(#dbe0e6));
+	background: -webkit-linear-gradient(#FFFFFF, #dbe0e6);
+	background: -moz-linear-gradient(#FFFFFF, #dbe0e6);
+	background: -ms-linear-gradient(#FFFFFF, #dbe0e6);
+	background: -o-linear-gradient(#FFFFFF, #dbe0e6);
+	background: linear-gradient(#FFFFFF, #dbe0e6);
+	-pie-background: linear-gradient(#FFFFFF, #dbe0e6);
+	behavior: url(http://www.drinknlink.com/common/plugins/PIE.htc);
+}
+
+/* Z-index */
+.z100 {
+	z-index: 100;
+	position: relative;
+}
+
+.z101 {
+	z-index: 101;
+	position: relative;
+}
+
+.z102 {
+	z-index: 102;
+	position: relative;
+}
+
+/*  */
+.navbar-button {
+	position: relative;
+}
+
+.navbar-alert {
+	width: 20px;
+	height: 20px;
+	background: red;
+	position: absolute;
+	left: 60px;
+	top: 0px;
+	line-height: 20px;
+	vertical-align: middle;
+	color: white;
+	size: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url(http://www.drinknlink.com/common/plugins/PIE.htc);
+}

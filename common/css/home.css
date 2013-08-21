@@ -1,0 +1,21 @@
+#map-canvas {
+	height: 400px;
+}
+
+#quick-search {
+	margin-top: 100px;
+}
+
+#quick-search-panel {
+	border: 1px solid black;
+    color: #898989;
+    background-color: white;
+    font-size: 12px;
+    height: 200px;
+    width: 100px;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+    z-index: 3;
+}
+

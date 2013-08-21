@@ -1,0 +1,21 @@
+<?php
+$lang['0'] = "Over Drink 'n Link";
+$lang['1'] = "Ondek direct waar de actie is en spreek gemakkelijk af met vrienden op de beste locaties";
+$lang['2'] = "Hoe ver zijn we?";
+$lang['3'] = "Hoe werkt het?";
+$lang['4'] = "Hoe werkt het?";
+$lang['5'] = "Bekijk onze korte instructie video op";
+$lang['6'] = "Vind ons leuk op facebook";
+$lang['7'] = "Volg ons op twitter";
+$lang['8'] = "Sluit je bij ons aan op LinkedIn";
+$lang['9'] = "Investeren en adverteren";
+$lang['10'] = "Lees meer";
+$lang['11'] = "Nieuwsbrief";
+$lang['12'] = "Contact";
+$lang['13'] = "Over";
+$lang['14'] = "Algemeen";
+$lang['15'] = "Voorwaarden";
+$lang['16'] = "Adverteren";
+$lang['17'] = "Vormgeving";
+$lang['18'] = "Twitter: Volgers";
+$lang['19'] = "Facebook: Vind ik leuks";
